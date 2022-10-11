@@ -1,0 +1,24 @@
+{
+  "name": "mitienda",
+  "version": "1.0.0",
+  "description": "Tienda virtual",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/globaltic4/mitienda.git"
+  },
+  "author": "Global TIC 4",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/globaltic4/mitienda/issues"
+  },
+  "homepage": "https://github.com/globaltic4/mitienda#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.6.5"
+  }
+}
