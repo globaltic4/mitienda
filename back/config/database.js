@@ -1,17 +1,16 @@
-//Ubicacion de mongo BD:C:\Program Files\MongoDB\Server\6.0\bin
-const mongoose = require("mongoose");
+//Importamos la 'app' del archivo 'app.js'
+const app = require("./app");
+const connectDatabase = require("./config/database");
 
-//Método de conexion a mongo DB
-const connectDatabase = () => {
-    mongoose.connect(process.env.DB_LOCAL_URI, {
-        useNewUrlParser: true,  //Permite q entre una nueva url
-        useUnifiedTopology: true
-    }).then(con => {
-        console.log(`Base de datos mongo conectada con el servidor: ${con.connection.host}`)
-    }).catch(con => {
-        console.log(`No se logro la conexion con la BD`)
-    })
-}
+//Setear el archivo de configuracion
+const dotenv = require("dotenv");
 
-//Exportamos el metodo: connectDatabase
-module.exports = connectDatabase;
+dotenv.config({ path: 'back/config/config.env' })
+
+//Llamar el metodo de BD que esta en database.js
+connectDatabase();
+
+//Llamamos al servidor
+const server = app.listen(process.env.PORT, () => {
+    console.log(`Servidor iniciado en el puerto: ${process.env.PORT} en modo: ${process.env.NODE_ENV}`)
+})
