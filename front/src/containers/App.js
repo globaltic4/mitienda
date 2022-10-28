@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/ListaProductosAdmin.css';
+import '../styles/App.css';  //css página ppal
 import Header from '../components/layaout/Header';
 import { Footer } from '../components/layaout/Footer';
 import Home from '../components/Home';

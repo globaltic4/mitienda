@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-//
-=======
-//Ubicacion de mongo BD:C:\Program Files\MongoDB\Server\6.0\bin
->>>>>>> 54db539d660e85d8d4b289f221ba90edbcaa5a37
+//modelado de objetos mongodb para Node.js
 const mongoose = require("mongoose");
 
 //Método de conexion a mongo DB
