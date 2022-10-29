@@ -1,4 +1,4 @@
-//
+//modelado de objetos mongodb para Node.js
 const mongoose = require("mongoose");
 
 //Método de conexion a mongo DB
