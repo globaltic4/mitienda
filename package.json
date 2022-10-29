@@ -4,7 +4,9 @@
   "description": "Tienda Virtual Celulares",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node back/server.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon back/server",
+    "prod": "SET MODE_ENV=PRODUCTION& nodemon back/server"
   },
   "repository": {
     "type": "git",

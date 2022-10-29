@@ -3,11 +3,12 @@ const app = express();
 
 app.use(express.json());
 
-/*Importar las rutas
-const productos = require("./routes/products")
+//Importar las rutas
+//const productos = require("./routes/products")
 
 //Creamos la ruta del navegador
-app.use('/api', productos)
-*/
+//app.use('/api', productos)
+
+
 //Exportamos la 'app'
 module.exports = app;

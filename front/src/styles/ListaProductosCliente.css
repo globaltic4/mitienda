@@ -1,0 +1,106 @@
+body {
+    background-color: #F2F5F7;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.container {
+    width: 27%;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.headerPrincipal {
+    background-color: #FFF;
+    padding: 20px 0;
+}
+
+.headerPrincipal,
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container1 {
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.btn-outline-secondary {
+    border-radius: 4px;
+}
+
+.headerPrincipal-titulo {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.headerPrincipal-titulo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.headerPrincipal-nav {
+    display: flex;
+}
+
+.headerPrincipal-nav a {
+    padding: 5px;
+    margin: 0 1rem;
+    color: #9799A6;
+    background-color: #FFF;
+    text-decoration: none;
+    transition: .5s;
+    display: block;
+    border-bottom: 1px solid #9799A6;
+}
+
+.subtitulo {
+    font-weight: bold;
+    font-size: 32px;
+    margin: 20px 119px;
+}
+
+.card-deck {
+    margin: auto 12rem;
+}
+
+.card {
+    width: 20rem;
+    transition: .3s;
+    box-shadow: 2px 2px 2px #CCC;
+}
+
+.card:hover {
+    box-shadow: 4px 4px 4px #CCC;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-title {
+    margin-top: 0.5rem;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+.btn-primary {
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    width: 140px;
+    text-align: center;
+}
+.footer {
+    background-color: #FFF;
+    color: black;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+}
