@@ -10,16 +10,17 @@ const Home = () => {
                 <div className="card">
                     <h5 className="card-title">Iphone 14 pro</h5>
                     <img className="card-img-top" src="./images/iphone14ProMax.jpg" alt="Card image cap"></img>
-                        <div className="card-body">
-                            <p className="card-text">Precio $6.800.000.</p>
-                            <p className="card-text">Reciente lanzamiento.</p>
-                        </div>
-                        <a href="#" className="btn btn-primary">Ver detalle</a>
-                        <div className="card-footer">
-                            <div className='rating mt-auto'>
-                                <div className='rating-outer'>
-                                    <div className='rating-inner'></div>
-                                </div>
+                    <div className="card-body">
+                        <p className="card-text">Precio $6.800.000.</p>
+                        <p className="card-text">Reciente lanzamiento.</p>
+                    </div>
+                    <Link className="btn btn-primary" to="/containers">
+                        <span>Ver detalle</span></Link>
+                    <div className="card-footer">
+                        <div className='rating mt-auto'>
+                            <div className='rating-outer'>
+                                <div className='rating-inner'></div>
+                            </div>
                                 <span id="No_opiniones">15 reviews</span>
                             </div>
                         </div>
@@ -31,7 +32,8 @@ const Home = () => {
                             <p className="card-text">Precio $ 9.500.000.</p>
                             <p className="card-text">Superior en detalle flexible.</p>
                         </div>
-                        <a href="#" className="btn btn-primary">Ver detalle</a>
+                        <Link className="btn btn-primary" to="/DetalleProducto.js">
+                        <span>Ver detalle</span></Link>
                         <div className="card-footer">
                             <div className='rating mt-auto'>
                                 <div className='rating-outer'>
@@ -48,7 +50,8 @@ const Home = () => {
                             <p className="card-text">Precio $ 1.700.000.</p>
                             <p className="card-text">Excelencia en los detalles.</p>
                         </div>
-                        <a href="#" className="btn btn-primary">Ver detalle</a>
+                         <Link className="btn btn-primary" to="/DetalleProducto.js">
+                        <span>Ver detalle</span></Link>
                         <div className="card-footer">
                             <div className='rating mt-auto'>
                                 <div className='rating-outer'>
@@ -65,7 +68,8 @@ const Home = () => {
                             <p className="card-text">Precio $ 1.800.000.</p>
                             <p className="card-text">Superior en desempeno</p>
                         </div>
-                        <a href="#" className="btn btn-primary">Ver detalle</a>
+                    <Link className="btn btn-primary" to="/containers">
+                        <span>Ver detalle</span></Link>
                         <div className="card-footer">
                             <div className='rating mt-auto'>
                                 <div className='rating-outer'>

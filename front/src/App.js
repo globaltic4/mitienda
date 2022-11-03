@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/App.css';  //css página ppal
-import Header from '../components/layaout/Header';
-import { Footer } from '../components/layaout/Footer';
-import Home from '../components/Home';
+import Header from './components/layaout/Header';
+import { Footer } from './components/layaout/Footer';
+import Home from './components/Home';
 
 //Router traido desde react-router-dom (no confundir con el de express)
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
