@@ -1,7 +1,7 @@
 const catchAsyncErrors = require("../middleware/catchAsyncErrors");
 const ErrorHandler = require("../utils/errorHandler");
 
-//Importar objeto producto de models
+//Importar objeto producto de models.
 const producto = require("../models/productos")
 
 //Crear un nuevo producto: /api/productos
