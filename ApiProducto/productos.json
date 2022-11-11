@@ -1,0 +1,70 @@
+[
+    {
+        "id":"GTS1",
+        "nombreProducto":"Motorola Moto G20",
+        "descripcionProducto":"Memoria 128 Gb, Color Plata, Tamaño pantalla 6.1 pulgadas",
+        "precioCostoProducto":2500000,
+        "precioVentaProducto":3000000,
+        "imagenProducto":"images",
+        "calificacionProducto" :"4.1",
+        "numCalificacionesProducto":"8",
+        "opiniones" :"Buen producto",
+        "cantidad":[
+            {
+                "categoria":"celular",
+                "cantidad":100
+            }
+        ]
+    },
+    {
+        "id":"GTS2",
+        "nombreProducto":"Samsung Tab S7 FE",
+        "descripcionProducto":"Memoria 128 Gb, Color Plata, Tamaño pantalla 10.1 pulgadas",
+        "precioCostoProducto":3800000,
+        "precioVentaProducto":5200000,
+        "imagenProducto":"images",
+        "calificacionProducto" :"4.1",
+        "numCalificacionesProducto":"8",
+        "opiniones" :"Buen producto",
+        "cantidad":[
+            {
+                "categoria":"tablet",
+                "cantidad":100
+            }
+        ]
+    },
+    {
+        "id":"GTS3",
+        "nombreProducto":"Xiami TAB",
+        "descripcionProducto":"Memoria 128 Gb, Color Plata, Tamaño pantalla 6.1 pulgadas",
+        "precioCostoProducto":2500000,
+        "precioVentaProducto":3000000,
+        "imagenProducto":"images",
+        "calificacionProducto" :"4.1",
+        "numCalificacionesProducto":"8",
+        "opiniones" :"Regular",
+        "cantidad":[
+            {
+                "categoria":"tablet",
+                "cantidad":100
+            }
+        ]
+    },
+    {
+        "id":"GTS4",
+        "nombreProducto":"iPhone",
+        "descripcionProducto":"Pro Max 14",
+        "precioCostoProducto":2800000,
+        "precioVentaProducto":3800000,
+        "imagenProducto":"images",
+        "calificacionProducto" :"4.1",
+        "numCalificacionesProducto":"8",
+        "opiniones" :"Buen producto",
+        "cantidad":[
+            {
+                "categoria":"celular",
+                "cantidad":100
+            }
+        ]
+    }
+]

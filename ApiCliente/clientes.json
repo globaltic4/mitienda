@@ -1,0 +1,34 @@
+[
+    {
+        "id":"01",
+        "nombreUsuario":"Manuela Rodriguez",
+        "documentoUsuario":"5558322",
+        "emailUsuario":"mrodriguez@globaltic.com",
+        "passwordUsuario":"a1c2",
+        "rolUsuario":"Admin"
+    },
+    {
+        "id":"02",
+        "nombreUsuario":"Esperanza Perez",
+        "documentoUsuario":"585224",
+        "emailUsuario":"eperez@globaltic.com",
+        "passwordUsuario":"a1c2",
+        "rolUsuario":"User"
+    },
+    {
+        "id":"03",
+        "nombreUsuario":"Carmenza Grajales",
+        "documentoUsuario":"5558322",
+        "emailUsuario":"cgrajales@globaltic.com",
+        "passwordUsuario":"a1c2",
+        "rolUsuario":"User"
+    },
+    {
+        "id":"04",
+        "nombreUsuario":"Juan Cabarcas",
+        "documentoUsuario":"5558322",
+        "emailUsuario":"jcabarcas@globaltic.com",
+        "passwordUsuario":"a1c2",
+        "rolUsuario":"Admin"
+    }
+]
