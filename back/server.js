@@ -1,5 +1,5 @@
 //Importamos la 'app' del archivo 'app.js'
-const app = require("./app");
+const app = require(".app");
 const connectDatabase = require("./config/database");
 
 //Setear el archivo de configuracion
