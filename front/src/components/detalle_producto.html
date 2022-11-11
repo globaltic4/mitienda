@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web tienda virtual Mi tienda" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Mi tienda</title>
+</head>
+
+<body>
+    <header className="headerPrincipal">
+        <div className="container">
+            <nav className="navbar navbar-light bg-light">
+                <a className="navbar-brand" href="#">
+                    <img src="./images/globaltic.jpg" width="35" height="35" className="d-inline-block align-top"
+                        alt="Logo Global Tic 4">
+                </a>
+            </nav>
+            <h1 className="headerPrincipal-titulo">Mi tienda</h1>
+        </div>
+        <div className="container1">
+            <div className="input-group">
+                <input type="text" id="search_field" className="form-control" placeholder='Que producto busca?'></input>
+                <div className="input-group-append">
+                    <button id="searchbtn" className="btn">
+                        <i className="fa fa-search-plus fa-2x text-white" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <nav className="headerPrincipal-nav">
+                <div className="btn-group" role="group" aria-label="Basic example">
+                    <div>
+                        <a href="#" className="btn btn-outline-secondary btn-sm ">Home</a>
+                    </div>
+                    <div>
+                        <a href="#" className="btn btn-outline-secondary btn-sm ">Categoria</a>
+                    </div>
+                    <div>
+                        <a href="#" className="btn btn-outline-secondary btn-sm ">Fecha</a>
+                    </div>
+                </div>
+            </nav>
+            <i className="fa fa-shopping-cart fa-2x text-black" aria-hidden="false"></i>
+            <span className="ml-1" id="cart_count">2</span>
+        </div>
+    </header>
+    <h2 className="subtitulo">Detalle del Producto</h2>
+    <div className="card-deck">
+        <div className="card">
+            <h5 className="card-title">Iphone 14 pro</h5>
+            <img className="card-img-top" src="./images/Xiomi.jpg" alt="Card image cap">
+            <div className="card-body">
+                <p className="card-text">Precio $6.800.000.</p>
+                <p className="card-text">Reciente lanzamiento.</p>
+            </div>
+            
+            <div className="card-footer">
+                <div className='rating mt-auto'>
+                    <div className='rating-outer'>
+                        <div className='rating-inner'></div>
+                    </div>
+                    <span id="No_opiniones">15 reviews</span>
+                </div>
+            </div>
+        </div>
+        <div className="card">
+            <h5 className="card-title">Apple iPhone 14 Pro 128 GB Color Oro</h5>
+            <div className="card-body">
+                <table className="table">
+                    <thead className="thead-light">
+                        <tr>
+                            <th scope="col">Caracteristicas</th>
+                            <th scope="col">Detalle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Marca</td>
+                            <td>Apple</td>
+                        </tr>
+                        <tr>
+                            <td>Nombre</td>
+                            <td>Iphone 14 Pro Max</td>
+                        </tr>
+                        <tr>
+                            <td>Sistema Operativo</td>
+                            <td>iOS 14</td>
+                        </tr>
+                        <tr>
+                            <td>Tecnología</td>
+                            <td>5G</td>
+                        </tr>
+                        <tr>
+                            <td>Capacidad Memoria</td>
+                            <td>128 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Color</td>
+                            <td>Gold</td>
+                        </tr>
+                        <tr>
+                            <td>Tamaño Pantalla</td>
+                            <td>6.1 pulgadas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div className="btn-group-d" role="group" aria-label="Basic example">
+                <div>
+                    <a href="#" className="btn btn-primary">Regresar</a>
+                </div>
+                <div>
+                    <a href="#" className="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+            
+            <div className="card-footer">
+                <div className='rating mt-auto'>
+                    <div className='rating-outer'>
+                        <div className='rating-inner'></div>
+                    </div>
+                    <span id="No_opiniones">25 reviews</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer className="rodapePrincipal-navMap-list">
+        <section className="footer">
+            <div>
+                <p className="copyright">&copy;Copyright Global Tic Software - 2022</p>
+            </div>
+        </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

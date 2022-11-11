@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 
 const ListaProductosCliente = () => {
     return (
@@ -12,7 +13,8 @@ const ListaProductosCliente = () => {
                         <p className="card-text">Precio $6.800.000.</p>
                         <p className="card-text">Reciente lanzamiento.</p>
                     </div>
-                    <a href="#" className="btn btn-primary">Añadir mi carrito</a>
+                    <Link className="btn btn-primary" to="/detalleProducto">
+                    <span>Añadir mi carrito</span></Link> 
                     <div className="card-footer">
                         <div className='rating mt-auto'>
                             <div className='rating-outer'>

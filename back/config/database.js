@@ -1,27 +1,16 @@
-<<<<<<< HEAD
-const mongoose = require ("mongoose");
+//Importamos la 'app' del archivo 'app.js'
+const app = require("./app");
+const connectDatabase = require("./config/database");
 
-const connectDatabase = () => {
-    mongoose.connect(process.env.DB_LOCAL_URI, {
-        useNewUrlParser:
-    })
-}
-=======
-//modelado de objetos mongodb para Node.js
-const mongoose = require("mongoose");
+//Setear el archivo de configuracion
+const dotenv = require("dotenv");
 
-//Método de conexion a mongo DB
-const connectDatabase = () => {
-    mongoose.connect(process.env.DB_LOCAL_URI, {
-        useNewUrlParser: true,  //Permite q entre una nueva url
-        useUnifiedTopology: true
-    }).then(con => {
-        console.log(`Base de datos mongo conectada con el servidor: ${con.connection.host}`)
-    }).catch(con => {
-        console.log(`No se logro la conexion con la BD`)
-    })
-}
+dotenv.config({ path: 'back/config/config.env' })
 
-//Exportamos el metodo: connectDatabase
-module.exports = connectDatabase;
->>>>>>> 9f36958fdfc8891bdb4ae953f4301f38a2048d33
+//Llamar el metodo de BD que esta en database.js
+connectDatabase();
+
+//Llamamos al servidor
+const server = app.listen(process.env.PORT, () => {
+    console.log(`Servidor iniciado en el puerto: ${process.env.PORT} en modo: ${process.env.NODE_ENV}`)
+})
