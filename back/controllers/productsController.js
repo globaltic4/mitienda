@@ -6,7 +6,7 @@ const producto = require("../models/productos")
 
 //Crear un nuevo producto: /api/productos
 exports.newProduct = catchAsyncErrors(async (req, res, next) => {
-    //req.body.user = req.user.id;
+    req.body.user = req.user.id;
 
     //Respuesta de tipo await(requiere async) = Esperar que ocurra p tener un producto nuevo
     const product = await producto.create(req.body);  //informacion del front (req.body)
@@ -36,7 +36,7 @@ exports.getProducts = catchAsyncErrors(async (req, res, next) => {
 
 //Consulta producto x id
 exports.getProductById = catchAsyncErrors(async (req, res, next) => {
-    const product = await producto.findById(req.params.id);
+    const product = await producto.findById(req.params.id);  //id viene de params (ruta navegador)
 
     if (!product) {
         return next(new ErrorHandler("Producto no encontrado", 404))
@@ -73,3 +73,17 @@ exports.updateProduct = catchAsyncErrors(async (req, res, next) => {
     })
 })
 
+// Eliminar un producto
+exports.deleteProduct = catchAsyncErrors(async (req, res, next) => {
+    const product = await producto.findById(req.params.id);
+    //Verificar si no existe el producto
+    if (!product) {
+        return next(new ErrorHandler("Producto no encontrado", 404))
+    }
+
+    await product.remove();  //Eliminamos el producto
+    res.status(200).json({
+        success: true,
+        message: "Producto se elimino de BD."
+    })
+})

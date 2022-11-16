@@ -6,9 +6,11 @@ app.use(express.json());
 
 //Importar las rutas
 const productos = require("./routes/products")
+const pagos = require("./routes/pagos")
 
 //Creamos la ruta del navegador
 app.use('/api', productos)
+app.use('/api', pagos)
 
 //MiddleWares para manejar errores de la Aplicación
 app.use(errorMiddleware);

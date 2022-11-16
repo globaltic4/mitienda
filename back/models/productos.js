@@ -82,11 +82,11 @@ const productosSchema = mongoose.Schema({
             }
         }
     ],
-    /*user: {
+    user: {
         type: mongoose.Schema.Types.ObjectId,  //Relacionamos el producto con usuario (Objeto User)
-        ref: 'User',
-        required: true
-    },*/
+        required: true,
+        ref: 'auth'
+    },
     fechaCreacionProducto: {
         type: Date,
         default: Date.now
