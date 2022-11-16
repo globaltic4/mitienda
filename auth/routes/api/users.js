@@ -2,10 +2,10 @@ const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const keys = require("./keys");
-const validateLoginInput = require("./login");
-const validateRegisterInput = require("./register");
-const User = require("./user");
+const keys = require("../../config/keys");
+const validateLoginInput = require("../../validation/login");
+const validateRegisterInput = require("../../validation/register");
+const User = require("../../models/user");
 
 router.post("/registro", (req, res) => {
     console.log("registro");
