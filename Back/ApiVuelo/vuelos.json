@@ -1,0 +1,70 @@
+[
+    {
+        "_id":"BM01",
+        "origen":"Bogota",
+        "destino":"Medellin",
+        "fecha":"2022-11-05 11:00:00",
+        "valor":100000,
+        "silla":[
+            {
+                "categoria":"economica",
+                "silla":100
+            },
+            {
+                "categoria":"ejecutiva",
+                "silla":50
+            }
+        ]
+    },
+    {
+        "_id":"CM01",
+        "origen":"Cali",
+        "destino":"Medellin",
+        "fecha":"2022-11-04 11:00:00",
+        "valor":110000,
+        "silla":[
+            {
+                "categoria":"economica",
+                "silla":100
+            },
+            {
+                "categoria":"ejecutiva",
+                "silla":50
+            }
+        ]
+    },
+    {
+        "_id":"PM01",
+        "origen":"Pasto",
+        "destino":"Medellin",
+        "fecha":"2022-11-06 11:00:00",
+        "valor":300000,
+        "silla":[
+            {
+                "categoria":"economica",
+                "silla":100
+            },
+            {
+                "categoria":"ejecutiva",
+                "silla":50
+            }
+        ]
+    },
+    {
+        "_id":"LM01",
+        "origen":"Leticia",
+        "destino":"Medellin",
+        "fecha":"2022-11-10 11:00:00",
+        "valor":300000,
+        "silla":[
+            {
+                "categoria":"economica",
+                "silla":100
+            },
+            {
+                "categoria":"ejecutiva",
+                "silla":50
+            }
+        ]
+    }
+]

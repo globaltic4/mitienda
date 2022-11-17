@@ -1,0 +1,18 @@
+[
+    {
+        "_id":"01",
+        "nombre":"persona1"
+    },
+    {
+        "_id":"02",
+        "nombre":"persona2"
+    },
+    {
+        "_id":"03",
+        "nombre":"persona3"
+    },
+    {
+        "_id":"04",
+        "nombre":"persona4"
+    }
+]
