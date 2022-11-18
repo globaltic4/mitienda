@@ -1,8 +1,14 @@
 const express = require("express");  //Intercomunicador entre el back y el front
 const app = express();
 const errorMiddleware = require("./middleware/errors")
+const cookieParser = require("cookie-parser")
+const bodyParser = require('body-parser')
+const fileUpload = require('express-fileupload')
 
 app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cookieParser());
+app.use(fileUpload());
 
 //Importar las rutas
 const productos = require("./routes/products")
@@ -12,7 +18,7 @@ const pagos = require("./routes/pagos")
 app.use('/api', productos)
 app.use('/api', pagos)
 
-//MiddleWares para manejar errores de la Aplicación
+//MiddleWares manejo errores de la Aplicación
 app.use(errorMiddleware);
 
 //Exportamos la 'app'
