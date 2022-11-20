@@ -166,10 +166,13 @@ exports.updatePassword = catchAsyncErrors(async (req, res, next) => {
 
 //Update perfil de usuario (logueado)
 exports.updateProfile = catchAsyncErrors(async (req, res, next) => {
-    //Actualizar el email por user a decisión de cada uno
+    //Actualizar el email, role por user a decisión de cada uno
     const newUserData = {
-        nombreUsuario: req.body.nombre,
-        emailUsuario: req.body.email
+        nombreUsuario: req.body.nombreUsuario,
+        emailUsuario: req.body.emailUsuario,
+        estadoUsuario: req.body.estadoUsuario,
+        role: req.body.role
+        
     }
 
     const user = await User.findByIdAndUpdate(req.user.id, newUserData, {
@@ -213,10 +216,10 @@ exports.getUserDetails = catchAsyncErrors(async (req, res, next) => {
 //Actualizar perfil de usuario (como administrador)
 exports.updateUser = catchAsyncErrors(async (req, res, next) => {
     const nuevaData = {
-        nombreUsuario: req.body.nombre,
-        emailUsuario: req.body.email,
-        role: req.body.rol,
-        estadoUsuario: req.body.estado
+        nombreUsuario: req.body.nombreUsuario,
+        emailUsuario: req.body.emailUsuario,
+        role: req.body.role,
+        estadoUsuario: req.body.estadoUsuario
     }
 
     const user = await User.findByIdAndUpdate(req.params.id, nuevaData, {
@@ -227,6 +230,7 @@ exports.updateUser = catchAsyncErrors(async (req, res, next) => {
 
     res.status(200).json({
         success: true,
+        message: "Usuario actualizado correctamente",
         user
     })
 })

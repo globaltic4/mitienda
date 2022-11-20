@@ -13,10 +13,12 @@ app.use(fileUpload());
 //Importar las rutas
 const productos = require("./routes/products")
 const pagos = require("./routes/pagos")
+const usuarios = require("./routes/auth")
 
 //Creamos la ruta del navegador
 app.use('/api', productos)
 app.use('/api', pagos)
+app.use('/api', usuarios)
 
 //MiddleWares manejo errores de la Aplicación
 app.use(errorMiddleware);
